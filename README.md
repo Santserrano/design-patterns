@@ -58,7 +58,8 @@ npm test
 
 ### 🔀 1. Crear una rama por patrón
 
-Cada uno trabaja en su propio patrón, en una rama separada:
+Cada uno trabaja en su propio patrón, en una rama separada.
+Ejemplo para trabajar en la rama del patrón "facade".
 
 ```bash
 git checkout -b feature/facade
