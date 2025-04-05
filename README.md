@@ -1,84 +1,106 @@
-# Turborepo starter
+# 🧠 Proyecto: Patrones de Diseño en TypeScript
 
-This Turborepo starter is maintained by the Turborepo core team.
+Este proyecto tiene como objetivo implementar ejemplos de **patrones de diseño** en TypeScript con fines educativos, organizados en un **monorepo** utilizando [Turborepo](https://turbo.build/repo), y tests con [Jest](https://jestjs.io/).
 
-## Using this example
+---
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+## 📁 Estructura del Proyecto
 
 ```
-cd my-turborepo
-pnpm build
+patrones-diseno/
+├─ packages/
+│  ├─ facade/               # Patrón Facade
+│  ├─ adapter/              # Patrón Adapter
+│  ├─ interpreter/          # Patrón Interpreter
+│  ├─ template-method/      # Patrón Template Method
+│  └─ chain-responsibility/ # Patrón Chain of Responsibility
+├─ turbo.json
+├─ package.json
+└─ tsconfig.json
 ```
 
-### Develop
+Cada paquete en `packages/` contiene:
 
-To develop all apps and packages, run the following command:
+- Implementación del patrón
+- Tests unitarios con Jest
+- Su propio `package.json`
 
-```
-cd my-turborepo
-pnpm dev
-```
+---
 
-### Remote Caching
+## ⚙️ Instalación y configuración
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
+```bash
+git clone https://github.com/Santserrano/design-patterns.git
+cd patrones-diseno
+npm install
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+---
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+## 🧪 Correr todos los tests
 
+Desde la raíz:
+
+```bash
+npm run test
 ```
-npx turbo link
+
+También podés correr los tests de un paquete específico, por ejemplo:
+
+```bash
+cd packages/facade
+npm test
 ```
 
-## Useful Links
+---
 
-Learn more about the power of Turborepo:
+## 👥 Flujo de trabajo colaborativo
 
-- [Tasks](https://turbo.build/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/docs/reference/command-line-reference)
+### 🔀 1. Crear una rama por patrón
+
+Cada uno trabaja en su propio patrón, en una rama separada:
+
+```bash
+git checkout -b feature/facade
+```
+
+### 💻 2. Implementar y testear localmente
+
+- Escribir el código del patrón
+- Agregar al menos 1 test con Jest
+- Confirmar que los tests pasen (`npm test` dentro del paquete)
+
+### 💬 3. Subir la rama y abrir un Pull Request
+
+```bash
+git push origin feature/facade
+```
+
+Desde GitHub, crear un **Pull Request hacia `main`**.
+
+### 🔍 4. Revisiones de código
+
+Se revisa la PR y verifica con GitHub Actions.
+
+### 🔄 5. Merge a `main`
+
+Una vez aprobado, se puede hacer el **merge** a la rama `main`.
+
+---
+
+## 🧩 Créditos
+
+- 💡 Proyecto realizado para la cátedra de Ingeniería de Software II
+- 👨‍💻 Integrantes: Gabriel, Jeuel, Juan, Santiago.
+
+---
+
+## 🗂️ Desarrollo
+
+| Patrón                  | Responsable   |
+|-------------------------|---------------|
+| Facade                  | ---------     |
+| Adapter                 | ---------     |
+| Interpreter             | ---------     |
+| Template Method         | ---------     |
+| Chain of Responsibility | ---------     |
