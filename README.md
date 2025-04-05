@@ -56,13 +56,13 @@ npm test
 
 ## 👥 Flujo de trabajo colaborativo
 
-### 🔀 1. Crear una rama por patrón
+### 🔀 1. Trabajamos en una rama por patrón
 
 Cada uno trabaja en su propio patrón, en una rama separada.
-Ejemplo para trabajar en la rama del patrón "facade".
+Ejemplo para trabajar en la rama del patrón "adapter".
 
 ```bash
-git checkout -b feature/facade
+git checkout feature/adapter #Para cambiar a la rama
 ```
 
 ### 💻 2. Implementar y testear localmente
