@@ -7,7 +7,7 @@ Este proyecto tiene como objetivo implementar ejemplos de **patrones de diseño*
 ## 📁 Estructura del Proyecto
 
 ```
-patrones-diseno/
+design-patterns/
 ├─ packages/
 │  ├─ facade/               # Patrón Facade
 │  ├─ adapter/              # Patrón Adapter
