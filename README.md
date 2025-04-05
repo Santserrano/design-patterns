@@ -31,7 +31,7 @@ Cada paquete en `packages/` contiene:
 
 ```bash
 git clone https://github.com/Santserrano/design-patterns.git
-cd patrones-diseno
+cd design-patterns
 npm install
 ```
 
