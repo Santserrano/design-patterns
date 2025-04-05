@@ -92,7 +92,7 @@ Una vez aprobado, se puede hacer el **merge** a la rama `main`.
 ## 🧩 Créditos
 
 - 💡 Proyecto realizado para la cátedra de Ingeniería de Software II
-- 👨‍💻 Integrantes: Gabriel, Jeuel, Juan, Santiago.
+- 👨‍💻 Integrantes: G Enzo, Jeuel E Linder, Juan, Santiago.
 
 ---
 
@@ -100,8 +100,8 @@ Una vez aprobado, se puede hacer el **merge** a la rama `main`.
 
 | Patrón                  | Responsable   |
 |-------------------------|---------------|
-| Facade                  | ---------     |
-| Adapter                 | ---------     |
-| Interpreter             | ---------     |
-| Template Method         | ---------     |
+| Facade                  | Jeuel         |
+| Adapter                 | Enzo          |
+| Interpreter             | Gualtieri     |
+| Template Method         | Serrano       |
 | Chain of Responsibility | ---------     |
