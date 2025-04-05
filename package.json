@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "patrones-diseno",
   "private": true,
   "scripts": {
     "build": "turbo run build",
