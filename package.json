@@ -7,5 +7,10 @@
   "scripts": {
     "test": "turbo run test"
   },
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "design-patterns-monorepo": "file:"
+  }
 }
