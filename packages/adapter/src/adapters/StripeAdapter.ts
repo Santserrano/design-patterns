@@ -1,7 +1,7 @@
 import { IPaymentProcessor } from "../interfaces/IPaymentProcessor";
 import { Stripe } from "../payment/Stripe"; // Adjust the path as needed
 
-export class StripeAdadpter implements IPaymentProcessor{
+export class StripeAdapter implements IPaymentProcessor{
     private stripe: Stripe;
 
     constructor(stripe: Stripe){
