@@ -1,23 +1,12 @@
-class SubsystemA {
-    operationA(): string {
-      return 'SubsystemA: Ready!';
-    }
-  }
-  
-  class SubsystemB {
-    operationB(): string {
-      return 'SubsystemB: Working!';
-    }
-  }
-  
-  export class Template {
-    private subsystemA = new SubsystemA();
-    private subsystemB = new SubsystemB();
-  
-    public operation(): string {
-      const resultA = this.subsystemA.operationA();
-      const resultB = this.subsystemB.operationB();
-      return `${resultA} ${resultB}`;
-    }
-  }
-  
+import { Te } from './Te';
+import { Cafe } from './Cafe';
+
+const drinks = [
+  { name: 'Te', instance: new Te() },
+  { name: 'Cafe', instance: new Cafe() },
+];
+
+drinks.forEach(drink => {
+  console.log(`\nPreparando ${drink.name}:`);
+  drink.instance.prepare().forEach(step => console.log(`- ${step}`));
+});
