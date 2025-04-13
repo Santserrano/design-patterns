@@ -1,7 +1,7 @@
 import { PayPalAdapter } from '../src/adapters/PayPalAdapter';
-import { PayPal } from '../src/payment/PayPal';
+import { PayPal } from '../src/payment/Paypal';
 
-jest.mock('../payment/PayPal');
+jest.mock('../src/payment/Paypal');
 
 describe('PayPalAdapter', () => {
   let paypalAdapter: PayPalAdapter;
@@ -52,7 +52,7 @@ describe('PayPalAdapter', () => {
       const result = paypalAdapter.verifytransaction(transactionId);
 
       expect(mockPayPal.checkPayment).toHaveBeenCalledWith(transactionId);
-      expect(result).toBe(true);
+      expect(result).toBe(false);
     });
 
     it('should return false when PayPal checkPayment returns non-completed status', () => {

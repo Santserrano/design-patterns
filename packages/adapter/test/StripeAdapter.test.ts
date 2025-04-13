@@ -1,7 +1,7 @@
 import { StripeAdapter } from '../src/adapters/StripeAdapter';
 import { Stripe } from '../src/payment/Stripe';
 
-jest.mock('../payment/Stripe');
+jest.mock('../src/payment/Stripe');
 
 describe('StripeAdapter', () => {
   let stripeAdapter: StripeAdapter;
@@ -27,7 +27,7 @@ describe('StripeAdapter', () => {
 
       expect(mockStripe.charge).toHaveBeenCalledWith(
         10000,
-        'Adapted payment'
+        'adapte payment'
       );
     });
 

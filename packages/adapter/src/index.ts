@@ -6,7 +6,7 @@ import { Stripe } from "./payment/Stripe"; // Adjust the path as needed
 
 
 
-class PaymentService {
+export class PaymentService {
   constructor(private paymentProcessor: IPaymentProcessor) {}
 
   executePayment(amount: number): void {
