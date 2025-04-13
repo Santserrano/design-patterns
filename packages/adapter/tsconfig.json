@@ -1,7 +1,10 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-      "outDir": "dist"
-    },
-    "include": ["src/**/*", "test/PayPalAdalter.test.ts"]
-  }
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*",
+    "test/PayPalAdapter.test.ts"
+  ]
+}
