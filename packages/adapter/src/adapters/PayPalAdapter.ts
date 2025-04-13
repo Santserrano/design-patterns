@@ -8,10 +8,10 @@ export class PayPalAdapter implements IPaymentProcessor {
     private paypal: PayPal;
 
     constructor(paypal: PayPal) {
-        this.paypal = new PayPal();
+        this.paypal = paypal;
     }
-    processPayment(amont: number): void {
-        const transactionId = this.paypal.makePayment(amont, 'USD');
+    processPayment(amount: number): void {
+        const transactionId = this.paypal.makePayment(amount, 'USD');
         console.log(`Payment processed with PayPal. Transaction ID: ${transactionId}`);
     }
 

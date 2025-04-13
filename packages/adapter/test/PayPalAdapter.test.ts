@@ -42,23 +42,23 @@ describe('PayPalAdapter', () => {
   });
 
   describe('verifyTransaction', () => {
-    it('should return true when PayPal checkPayment returns completed status', () => {
+    it('should return true when PayPal checkPayment returns Completed status', () => {
       const transactionId = 'paypal-trans-123';
       mockPayPal.checkPayment.mockReturnValue({
-        status: 'completed',
+        status: 'Completed',
         amount: 100,
       });
 
       const result = paypalAdapter.verifytransaction(transactionId);
 
       expect(mockPayPal.checkPayment).toHaveBeenCalledWith(transactionId);
-      expect(result).toBe(false);
+      expect(result).toBe(true);
     });
 
-    it('should return false when PayPal checkPayment returns non-completed status', () => {
+    it('should return false when PayPal checkPayment returns non-Completed status', () => {
       const transactionId = 'paypal-trans-123';
       mockPayPal.checkPayment.mockReturnValue({
-        status: 'failed',
+        status: 'Failed',
         amount: 100,
       });
 
