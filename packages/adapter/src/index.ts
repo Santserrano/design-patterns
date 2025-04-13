@@ -4,10 +4,8 @@ import { StripeAdapter } from "./adapters/StripeAdapter";
 import { PayPal } from "./payment/Paypal"; // Adjust the path as needed
 import { Stripe } from "./payment/Stripe"; // Adjust the path as needed
 
-
-
 export class PaymentService {
-  constructor(private paymentProcessor: IPaymentProcessor) {}
+  constructor(private paymentProcessor: IPaymentProcessor) { }
 
   executePayment(amount: number): void {
     this.paymentProcessor.processPayment(amount);
