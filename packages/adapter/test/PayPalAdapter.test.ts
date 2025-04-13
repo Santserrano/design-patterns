@@ -1,5 +1,5 @@
 import { PayPalAdapter } from '../src/adapters/PayPalAdapter';
-import { PayPal } from '../src/payment/Paypal';
+import { PayPal } from '@/payment/PayPal';
 
 jest.mock('../src/payment/Paypal');
 

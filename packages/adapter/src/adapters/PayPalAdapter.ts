@@ -1,5 +1,5 @@
 import { IPaymentProcessor } from '../interfaces/IPaymentProcessor';
-import { PayPal } from '../payment/Paypal';
+import { PayPal } from '../payment/PayPal';
 
 // The PayPalAdapter class implements the IPaymentProcessor interface and adapts the PayPal payment processing system to fit the interface.
 

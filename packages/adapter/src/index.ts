@@ -1,8 +1,8 @@
 import { IPaymentProcessor } from "./interfaces/IPaymentProcessor";
 import { PayPalAdapter } from "./adapters/PayPalAdapter";
 import { StripeAdapter } from "./adapters/StripeAdapter";
-import { PayPal } from "./payment/Paypal"; // Adjust the path as needed
-import { Stripe } from "./payment/Stripe"; // Adjust the path as needed
+import { PayPal } from "@/payment/PayPal";
+import { Stripe } from "./payment/Stripe";
 
 export class PaymentService {
   constructor(private paymentProcessor: IPaymentProcessor) { }
