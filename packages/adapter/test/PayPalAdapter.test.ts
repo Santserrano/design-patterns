@@ -1,7 +1,7 @@
 import { PayPalAdapter } from '../src/adapters/PayPalAdapter';
 import { PayPal } from '@/payment/PayPal';
 
-jest.mock('../src/payment/Paypal');
+jest.mock('@/payment/PayPal');
 
 describe('PayPalAdapter', () => {
   let paypalAdapter: PayPalAdapter;
