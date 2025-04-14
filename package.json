@@ -2,10 +2,13 @@
   "name": "design-patterns-monorepo",
   "private": true,
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "turbo": "^1.10.0"
   },
   "scripts": {
     "test": "turbo run test"
   },
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ]
 }
